@@ -1,0 +1,25 @@
+<c-sidebar>
+    <c-sidebar-brand>
+      <img src="assets/brand/logo.svg" alt="CoreUI Logo" class="sidebar-brand-full">
+      <img src="assets/brand/sygnet.svg" alt="CoreUI Logo" class="sidebar-brand-narrow">
+    </c-sidebar-brand>
+    <c-sidebar-nav>
+      <c-sidebar-nav-item name="Dashboard" url="/dashboard" icon="cil-speedometer"></c-sidebar-nav-item>
+      <!-- Add more navigation items here -->
+    </c-sidebar-nav>
+  </c-sidebar>
+  
+  <div class="wrapper d-flex flex-column min-vh-100 bg-light">
+    <c-header>
+      <button class="header-toggler px-md-0 me-md-3" type="button">
+        <span class="icon-list"></span>
+      </button>
+      <a class="header-brand" href="#">Admin Dashboard</a>
+    </c-header>
+    <div class="body flex-grow-1 px-3">
+      <router-outlet></router-outlet>
+    </div>
+    <c-footer>
+      <div>© 2023 Your Company</div>
+    </c-footer>
+  </div>
