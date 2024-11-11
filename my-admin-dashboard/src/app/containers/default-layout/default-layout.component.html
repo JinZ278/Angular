@@ -1,8 +1,12 @@
-  <c-sidebar visible #sidebar1="cSidebar" class="border-end">
+<c-sidebar visible #sidebar1="cSidebar" class="border-end">
+    <c-sidebar-header class="border-top">
+        <c-sidebar-brand>
+            <div class="center">
+                <img src="favicon.ico" alt="logo" class="sidebar-brand-full" href="#">
+            </div>
+        </c-sidebar-brand>
+    </c-sidebar-header>
     <c-sidebar-header class="border-bottom">
-      <c-sidebar-brand>
-        <img src="assets/brand/logo.jpg" alt="CoreUI Logo" class="sidebar-brand-full">
-      </c-sidebar-brand>
       <c-sidebar-brand>Sidebar Brand</c-sidebar-brand>
     </c-sidebar-header>
     <c-sidebar-nav [navItems]="navItems" />
