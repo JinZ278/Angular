@@ -11,6 +11,7 @@ const routes: Routes = [
       // Add more routes here
     ]
   },
+  { path: 'dashboard', loadChildren: () => import('./views/dashboard/dashboard.module').then(m => m.DashboardModule) },
   { path: '**', redirectTo: 'dashboard' }
 ];
 
