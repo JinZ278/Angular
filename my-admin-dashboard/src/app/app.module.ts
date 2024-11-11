@@ -4,13 +4,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import {
-  CButtonModule,
-  CCardModule,
-  CFooterModule,
-  CHeaderModule,
-  CIconModule,
-  CSidebarModule
+import { 
+  ButtonModule,
+  CardModule,
+  FooterModule,
+  HeaderModule,
+  SidebarModule
 } from '@coreui/angular';
 
 import { IconModule, IconSetService } from '@coreui/icons-angular';
@@ -19,18 +18,18 @@ import { DefaultLayoutComponent } from './containers/default-layout/default-layo
 @NgModule({
   declarations: [
     AppComponent,
-    DefaultLayoutComponent
+    DefaultLayoutComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    CButtonModule,
-    CCardModule,
-    CFooterModule,
-    CHeaderModule,
-    CIconModule,
-    CSidebarModule,
+    ButtonModule,
+    CardModule,
+    FooterModule,
+    HeaderModule,
+    IconModule,
+    SidebarModule,
     IconModule
   ],
   providers: [IconSetService],
